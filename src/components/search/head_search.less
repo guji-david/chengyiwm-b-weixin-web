@@ -1,0 +1,48 @@
+@color-white: #fff;
+@color-theme:#f6f6f6;
+@color-input-holder:#bcbcbc;
+.common{
+  background:@color-white ;
+}
+.common_head{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  .common_back{
+    width: 30px;
+    .common_img{
+      float: left;
+      padding-top: 5px;
+      width: 20px;
+
+    }
+
+  }
+  .common_search{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: @color-theme;
+    border-radius: 15px;
+    .search_img{
+      padding: 6px;
+      width: 20px;
+    }
+    .search_input{
+      height: 30px;
+      width: 85%;
+      background: @color-theme;
+    }
+    .search_input::-webkit-input-placeholder{
+      color: @color-input-holder;
+    }
+  }
+  .common_user{
+    margin-left: 30px ;
+    .common_person{
+      padding-top: 3px;
+      width: 25px;
+    }
+  }
+}
