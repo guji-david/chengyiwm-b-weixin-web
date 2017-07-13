@@ -1,0 +1,304 @@
+  @color-white: #fff;
+  @color-theme:#f6f6f6;
+  @color-theme-blue:#508cee;
+  @color-input-holder:#bcbcbc;
+.prod{
+  width: 100%;
+  .head_head{
+    position: fixed;
+    top:0;left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 1px solid #e3e3e3
+  }
+  .prod_nav{
+    //background: @color-white;
+    margin-top: 33px;
+    padding: 10px 0 ;
+    .type-select{
+      flex-direction: row;
+      display: flex;
+      width: 100%;
+      background-color: white;
+      .sl-col{
+        width: 20%;
+        margin: 12px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+        color: #2f2f2f;
+        .type-img{
+          height: 30px;
+          width: 30px;
+          margin-bottom: 8px;
+        }
+        .hight-text-1{
+          color:#f2675c;
+        }
+        .hight-text-2{
+          color:#f49826;
+        }
+        .hight-text-4{
+          color:#2cad93;
+        }
+        .hight-text-16{
+          color:#1a72d5;
+        }
+        .hight-text-128{
+          color:#4293f4;
+        }
+      }
+    }
+  }
+  /*底部功能按钮*/
+  .pro_bottom{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    .bottom_colom{
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      .colom_img{
+        width: 20px;
+        margin-top: 5px;
+      }
+      .colom_text{
+        font-size: 10px;
+        color: #2f2f2f;
+        padding-top: 3px;
+        margin-bottom:0;
+
+
+      }
+    }
+
+  }
+  /*底部弹出框*/
+  .pro_pop{
+    width: 100%;
+    //height: 160px;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #f6f6f6;
+    //筛选
+    .pop_select{
+
+      .select_head{
+        background-color: #508cee;
+        height: 40px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .head_item{
+          width: 30%;
+          color: white;
+          font-size: 15px;
+          text-align: left
+        }
+        .head_clear{
+          text-align: center;
+          .clear_text{
+            width: 70px;
+            line-height: 30px;
+            margin: 0 auto;
+            color: #e0e0e0;
+            background: #2b68d0;
+          }
+        }
+        .head_confirm{
+          text-align: right;
+        }
+      }
+      .select_body{
+        width: 100%;
+        text-align: left;
+        color: #150000;
+        height: 150px;
+        overflow-y:auto;
+        position: relative;
+        background: #f6f6f6;
+        .body_item{
+          line-height: 40px;
+          font-size: 14px;
+          .body_left{
+            width: 20%;
+            background: #f6f6f6;
+            .left_item{
+              text-align: center;
+              color: #999;
+            }
+            .item_active{
+              color: #150000;
+              background: #fff;
+            }
+          }
+          .body_right{
+            position: absolute;
+            top:0;
+            right: 0;
+            float: left;
+            height: 150px;
+            //border-left: 1px solid #e3e3e3;
+            width: 80%;
+            background-color: white;
+            .right_item{
+              position: relative;
+              margin-left: 15px;
+              font-size: 10px;
+              border-bottom: 1px solid #e3e3e3;
+              .item_img{
+                position: absolute;
+                right: 10%;
+                top: 15px;
+                img{
+                  width: 15px;
+                }
+              }
+            }
+            .select_active{
+              color: @color-theme-blue;
+            }
+
+          }
+        }
+
+      }
+    }
+    //投资方案
+    .pop_invest{
+      background-color: white;
+      .invest_head{
+        background-color: #508cee;
+        height: 40px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .head_item{
+          width: 30%;
+          color: white;
+          font-size: 15px;
+          text-align: left
+        }
+        .head_clear{
+          text-align: center;
+          .clear_text{
+            width: 70px;
+            line-height: 30px;
+            margin: 0 auto;
+            color: #e0e0e0;
+            background: #2b68d0;
+          }
+        }
+        .head_confirm{
+          text-align: right;
+        }
+      }
+      .invest_body{
+        width: 100%;
+        padding: 5px 15px;
+        height: 200px;
+        overflow-y:auto;
+        text-align: left;
+        color: #150000;
+        .body_item{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          line-height: 30px;
+          font-size: 14px;
+          .body_up{
+            position: relative;
+              .up_img{
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                text-align: right;
+                padding-right: 25px;
+                .more_img{
+                  width: 20px;
+                  transition: transform .4s;
+                  transform: rotate(0deg);
+                }
+
+                .more_img1{
+                  width: 20px;
+                  transition: transform .4s;
+                  transform: rotate(180deg);
+                }
+
+              }
+          }
+          .body_down{
+            ul li{
+              .down_item{
+                margin:5px;
+                width: 28%;
+                float: left;
+                text-align: center;
+                border-radius: 3px;
+                font-size: 10px;
+                border: 1px solid #f6f6f6;
+                background:#f6f6f6;
+              }
+              .invest_active{
+                border: 1px solid #F44040;
+                color: #F44040;
+                background:url(../../assets/img/invest_active_icon.png) no-repeat;
+                background-position: 5px 10px;
+              }
+            }
+
+          }
+        }
+
+      }
+    }
+    //排序
+    .pop_sort{
+      background-color: white;
+      .pop_item{
+        position: relative;
+        border-bottom: 0.8px solid #f6f6f6;
+        font-size: 13px;
+        color: #150000;
+        height: 35px;
+        padding-top: 20px;
+        .pop_sort_active{
+          color:@color-theme-blue ;
+        }
+        .sort_select{
+          position: absolute;
+          top: 34%;
+          right: 12%;
+          img{
+            width: 24px;
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+
+
+

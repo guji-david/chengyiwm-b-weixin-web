@@ -1,0 +1,376 @@
+
+html,
+body,
+* {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+input[type="text"] {
+  color: rgba(0, 0, 0, 0.75);
+}
+table {
+  border-collapse: collapse;
+}
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+em,
+i,
+b,
+strong {
+  font-style: normal;
+}
+/** 重置表单元素 **/
+legend {
+  color: #000;
+}
+/* for ie6 */
+fieldset,
+img {
+  border: 0;
+}
+/* img 搭车：让链接里的 img 无边框 */
+button,
+input,
+select,
+textarea {
+  background: transparent;
+  font-size: 100%;
+  outline: 0;
+}
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  vertical-align: middle;
+}
+/** 重置表格元素 **/
+/* 重置 HTML5 元素 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*-----------------------------------全局设置-----------------------------------------------*/
+/*-----------------------------------通用样式-----------------------------------------------*/
+/*盒模型*/
+.f_ib {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.f_db {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/*浮动*/
+.f_fl {
+  float: left;
+  display: inline;
+}
+.f_fr {
+  float: right;
+  display: inline;
+}
+.f_cl {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+.space_10 {
+  height: 10px;
+}
+.space_20 {
+  height: 20px;
+}
+.space_30 {
+  height: 30px;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  color: #fff !important;
+}
+input:focus {
+  background-position: 0 0;
+}
+button {
+  cursor: pointer;
+}
+@Maxsize: 18px;
+@radius: 10/24em;
+html, body {
+  font-size: 12px;
+}
+/* reset begin  */
+
+@media screen and (min-width: 436px) and (max-width: 1024px),
+screen and (min-device-width: 436px) and (max-device-width: 1024px) {
+  html,
+  body {
+    font-size: @Maxsize;
+  }
+}
+
+@media only screen and (max-width: 435px),
+only screen and (max-device-width: 435px) {
+  html,
+  body {
+    font-size: 16.3125px;
+  }
+}
+
+@media only screen and (max-width: 414px),
+only screen and (max-device-width: 414px) {
+  html,
+  body {
+    font-size: 15.525px;
+  }
+}
+
+@media only screen and (max-width: 400px),
+only screen and (max-device-width: 400px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 384px),
+only screen and (max-device-width: 384px) {
+  html,
+  body {
+    font-size: 14.4px;
+  }
+}
+
+@media only screen and (max-width: 375px),
+only screen and (max-device-width: 375px) {
+  html,
+  body {
+    font-size: 14.0625px;
+  }
+}
+
+@media only screen and (max-width: 360px),
+only screen and (max-device-width: 360px) {
+  html,
+  body {
+    font-size: 13.5px;
+  }
+}
+
+@media only screen and (max-width: 320px),
+only screen and (max-device-width: 320px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 240px),
+only screen and (max-device-width: 240px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  padding:0;
+  margin: 0;
+  min-height:100%;
+}
+
+body{
+  background-color: #f6f6f6;
+  padding: 0;
+  margin: 0;
+  min-height:100%;
+  font-family: "arial","sans-serif";
+  /*background: url(../../../static/image/1.png) center center #1d447d;*/
+
+}
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p,div blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul, ol, li{
+  list-style:none;
+}
+
+a{text-decoration: none; color:#fff}
+
+//==input
+input,select{
+  height: 50/24em;
+  box-sizing: border-box;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  vertical-align: middle;
+  font-size: 21/24em;
+}
+input[type=text],input[type=number],input[type=password],input[type=tel],select{
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  outline:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+button:focus{
+  outline:0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*蒙层*/
+.cy_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: -1;
+}
+/*数据为空*/
+.cy_prod_null{
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+
+}
